@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT;
 const companyService = require("./companyService");
 
 app.use(express.json());
