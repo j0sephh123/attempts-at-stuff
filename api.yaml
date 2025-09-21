@@ -30,16 +30,4 @@ spec:
           resources:
             requests: { cpu: "50m", memory: "64Mi" }
             limits:   { cpu: "500m", memory: "256Mi" }
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: api
-spec:
-  selector: { app: api }
-  ports:
-    - name: http
-      port: 3004
-      targetPort: 3004
-      protocol: TCP
-  type: ClusterIP
+
